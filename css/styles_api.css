@@ -1,0 +1,175 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+main{
+    background-color: rgb(40, 40, 40);
+    width: 100%;
+    background-image: url(/recursos/patron_fondo_2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100dvh;
+}
+header{
+    width: 100%;
+    height: 15dvh;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 0.9fr 1.4fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "logo bienvenida nav";
+    
+}
+.logo{
+    grid-area: logo;
+    width: 100%;
+    height: 15dvh;
+}
+.logo img{
+    width: 66%;
+    margin-top: -5%;
+    margin-left: 10%;
+}
+#bienvenida{
+    grid-area: bienvenida;
+    width: 100%;
+    height: 15dvh;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    line-height: 450%;
+}
+nav{
+    grid-area: nav;
+    width: 90%;
+    height: 10dvh;
+    background-color: rgb(48, 48, 48);
+    border-radius: 20px;
+    margin-left: 5%;
+    margin-top: 3%;
+    display: flex;
+}
+nav ul{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "liinicio liapi";
+    list-style: none;
+}
+#li_inicio{
+    grid-area: liinicio;
+    width: 80%;
+    height: 80%;
+    align-content: center;
+    text-align: center;
+    background: aliceblue;
+    border-radius: 20px;
+    margin-top: 2%;
+    margin-left: 9%;
+    transition: 0.3s ease-in-out;
+}
+#li_api{
+    grid-area: liapi;
+    width: 80%;
+    height: 80%;
+    align-content: center;
+    text-align: center;
+    background: aliceblue;
+    border-radius: 20px;
+    margin-top: 2%;
+    transition: 0.3s ease-in-out;
+    margin-left: 9%;
+}
+nav ul li a{
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    color: black;
+    transition: 0.3s;
+    width: 100%;
+    height: 100%;
+    display: block;
+    line-height: 359%;
+    transition: ease-in-out;
+}
+#li_inicio:hover, #li_api:hover {
+    background-color: #56B25C;
+    transform: scale(1.1); 
+}
+#li_inicio:hover a, #li_api:hover a {
+    color: white;
+}
+.principal{
+    width: 95%;
+    height: 75dvh;
+    justify-self: center;
+    font-family: "Poppins", sans-serif;
+    background-color: grey;
+    margin-top: 1%;
+    border-radius: 20px;
+    padding: 15px;
+}
+.principal input {
+    width: 38%;
+    font-family: "Poppins", sans-serif;
+    height: 7%;
+    margin-top: 1%;
+}
+.principal button{
+    width: 12%;
+    height: 8%;
+    font-family: "Poppins", sans-serif;
+    border-radius: 10px;
+    background-color: #56B25C;
+    color: white;
+    border: none;
+    margin-left: 2%;
+    transition: 0.3s;
+}
+.principal button:hover{
+    transform: scale(1.1);
+    background-color: white;
+    color:#56B25C ;
+}
+.cancion{
+    width: 100%;
+    height: 79%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "informa letra";
+    margin-top: 1%;
+}
+.no_letra{
+    background-color: aliceblue;
+    grid-area: informa;
+    border-right: 3px solid black;
+    text-align: center;
+    width: 99.8%;
+    height: 97%;
+}
+.letra{
+    grid-area: letra;
+    background-color: aqua;
+    padding: 15px;
+    height: 90%;
+    overflow: auto;
+    font-size: 95%;
+    text-align: center;
+}
+.cancion_img{
+    width: 50%;
+    justify-self: center;
+    margin-top: 2%;
+    height: 70%;
+}
+.cancion_img img{
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+main{
+    background-color: rgb(40, 40, 40);
+    width: 100%;
+    background-image: url(/recursos/patron_fondo_2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100dvh;
+}
+.registro{
+    width: 60%;
+    margin-left: 20%;
+    height: 500px;
+    margin-top: 8%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 3fr;
+    position: absolute;
+    background-color: black;
+    border-radius: 30px;
+    grid-template-areas: 
+    "titulo"
+    "form";
+}
+.registro h2{
+    grid-area: titulo;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    line-height: 200%;
+    font-family: "Poppins", sans-serif;
+    font-size: 200%;
+}
+.form_registro{
+    grid-area: form;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8,1fr);
+    background-color: rgb(36, 36, 36);
+    grid-template-areas: 
+    "lnombre"
+    "nombre"
+    "lemail"
+    "email"
+    "lpass"
+    "pass"
+    "ul"
+    "enviar";
+    border-radius: 0px 0px 20px 20px;
+    overflow: hidden;
+}
+.label_nombre{
+    grid-area: lnombre;
+    font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  line-height:300%;
+  font-size: 130%;
+  margin-left: 5%;
+  color: rgb(40, 233, 40);
+
+}
+.nombre{
+    grid-area: nombre;
+    width: 90%;
+    justify-self: center;
+}
+.label_email{
+    grid-area: lemail;
+    font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  line-height:300%;
+  font-size: 130%;
+  margin-left: 5%;
+  color: rgb(40, 233, 40);
+
+}
+.email{
+    grid-area: email;
+    width: 90%;
+    justify-self: center;
+}
+.label_pass{
+    grid-area: lpass;
+    font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  line-height:300%;
+  font-size: 130%;
+  margin-left: 5%;
+  color: rgb(40, 233, 40);
+
+}
+.pass{
+    grid-area: pass;
+    width: 90%;
+    justify-self: center;
+}
+.enviar{
+    grid-area: enviar;
+    font-family: "Poppins", sans-serif;
+    background-color: white;
+    color: black;
+    transition: 0.2s;
+    font-size: 150%;
+}
+.enviar:hover{
+    background-color: black;
+    color: white;
+}
+form a{
+    grid-area: ul;
+    margin-left: 5%;
+    text-decoration: none;
+    font-size: 120%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 190%;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Song Tracker</title>
+    <link rel="stylesheet" href="css/styles_login.css">
+
+    <!--Fuente-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section class="registro">
+            <h2>Inicio de Sesion</h2>
+            <form class="form_registro">
+                <label id="login_lemail" class="label_email" for="email">Correo Electronico</label>
+                <input id="login_email" class="email" type="email" name="email" required placeholder="Correo Electronico">
+                <label id="login_lpass" class="label_pass" for="password">Contraseña</label>
+                <input id="login_pass" class="pass" type="password" name="password" required placeholder="Contraseña">
+                <a href="index.html">Aun no tienes una cuenta?</a>
+                <button class="enviar" onclick="login(event)" type="button">Enviar</button>
+            </form>
+        </section>
+    </main>
+</body>
+<script src="java/script.js"></script>
+</html>

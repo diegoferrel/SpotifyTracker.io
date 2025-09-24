@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles_api.css">
+
+            <!--Fuente-->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <main>
+        <header>
+            <figure class="logo"><img src="recursos/logo_spotify.png" alt=""></figure>
+            <h2 id="bienvenida"></h2>
+            <nav>
+               <ul>
+                <li id="li_inicio"><a href="inicio.html">Inicio</a></li>
+                <li id="li_api"><a href="api.html">Buscador de Canciones</a></li>
+               </ul> 
+            </nav>
+        </header>
+        <section class="principal">
+            <p>Ingresa el enlace de compartir de la cancion que deseas rastrear, para obtener este enlace debes ir a spotify, dar click derecho 
+                sobre la cancion elegida y seleccionar compartir y copiar enlace.
+            </p>
+            <input type="text" name="link" id="link" placeholder="link de la cancion"> 
+            <button id="boton" onclick="rastrear()" >Rastrear Cancion</button>
+            <section class="cancion">
+                <aside class="no_letra">
+                </aside>
+                <aside class="letra">
+                    
+                </aside>
+            </section>
+            
+            
+        </section>
+    </main>
+</body>
+<script src="java/script.js"></script>
+</html> 

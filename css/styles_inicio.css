@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+main{
+    background-color: rgb(40, 40, 40);
+    width: 100%;
+    background-image: url(/recursos/patron_fondo_2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100dvh;
+}
+header{
+    width: 100%;
+    height: 15dvh;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 0.9fr 1.4fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "logo bienvenida nav";
+    
+}
+.logo{
+    grid-area: logo;
+    width: 100%;
+    height: 15dvh;
+}
+.logo img{
+    width: 66%;
+    margin-top: -5%;
+    margin-left: 10%;
+}
+#bienvenida{
+    grid-area: bienvenida;
+    width: 100%;
+    height: 15dvh;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    line-height: 450%;
+}
+nav{
+    grid-area: nav;
+    width: 90%;
+    height: 10dvh;
+    background-color: rgb(48, 48, 48);
+    border-radius: 20px;
+    margin-left: 5%;
+    margin-top: 3%;
+    display: flex;
+}
+nav ul{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "liinicio liapi";
+    list-style: none;
+}
+#li_inicio{
+    grid-area: liinicio;
+    width: 80%;
+    height: 80%;
+    align-content: center;
+    text-align: center;
+    background: aliceblue;
+    border-radius: 20px;
+    margin-top: 2%;
+    margin-left: 9%;
+    transition: 0.3s ease-in-out;
+}
+#li_api{
+    grid-area: liapi;
+    width: 80%;
+    height: 80%;
+    align-content: center;
+    text-align: center;
+    background: aliceblue;
+    border-radius: 20px;
+    margin-top: 2%;
+    transition: 0.3s ease-in-out;
+    margin-left: 9%;
+}
+nav ul li a{
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    color: black;
+    transition: 0.3s;
+    width: 100%;
+    height: 100%;
+    display: block;
+    line-height: 359%;
+    transition: ease-in-out;
+}
+#li_inicio:hover, #li_api:hover {
+    background-color: #56B25C;
+    transform: scale(1.1); 
+}
+#li_inicio:hover a, #li_api:hover a {
+    color: white;
+}
+.principal {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/recursos/fondo.jfif');
+    width: 100%;
+    height: 65dvh;
+}
+.principal section{
+    background-color: rgb(48, 48, 48);
+    width: 45%;
+    color: white;
+    padding: 15px;
+    margin-left: 3%;
+    height: 55%;
+    margin-top: 2%;
+    position: absolute;
+}
+.principal section h2{
+    font-size: 300%;
+    margin-top: 2%;
+    font-family: "Poppins", sans-serif;
+}
+.principal section p{
+    font-size: 150%;
+    font-family: "Poppins", sans-serif;
+    margin-top: 1%;
+    line-height: 272%;
+}
+.principal section li{
+    list-style: none;
+    background-color: #56B25C;
+    width: 39%;
+    height: 15%;
+    margin-top: 3%;
+    border-radius: 20px;
+    text-align: center;
+    align-content: center;
+    transition: 0.2s ease-in-out;
+}
+.principal section li a{
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    height: 100%;
+    line-height: 365%;
+    display: block;
+}
+.principal section li:hover{
+    transform: scale(1.1);
+    color: black;
+    background-color: white;
+}
+footer{
+    width: 100%;
+    height: 10dvh;
+    background-color: black;
+    margin-top: 10dvh;
+}
